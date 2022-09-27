@@ -1,6 +1,6 @@
 from tkinter import*
 mywin=Tk()
-mywin['bg']="red"
+mywin['bg']="white"
 mywin.title("CURRENCY CONVERTER")
 mywin.geometry('840x450')
 
@@ -62,44 +62,44 @@ def rTOpound():
 
 def swiss_francTOr():
             a= int(input_value.get())
-            s=81.50
+            s=82.41
             c= a*s
             ans.delete(0,END)
             ans.insert(0,str(c))
 
 def rTOswiss_franc():
             a= int(input_value.get())
-            s=81.50
-            c= a*s
+            s=82.41
+            c= a/s
             ans.delete(0,END)
             ans.insert(0,str(c))
 
 def singapore_dollarTOr():
             a= int(input_value.get())
-            s=81.50
+            s=56.72
             c= a*s
             ans.delete(0,END)
             ans.insert(0,str(c))
 def rTOsingapore_dollar():
             a= int(input_value.get())
-            s=81.50
-            c= a*s
+            s=56.72
+            c= a/s
             ans.delete(0,END)
             ans.insert(0,str(c))
 
 
                            
 
-Label(mywin,text="~~~WIDGET TO CONVERT THE CURRENCY~~~", padx=100, pady=25, bg='red', fg='Black', bd=7, font='system').grid(row=0,column=1)
-Label(mywin,text="Input the Currency you want to convert:", padx=50, pady=15, fg='blue', bg='red').grid(row=1,column=1)
+Label(mywin,text="~~~WIDGET TO CONVERT THE CURRENCY~~~", padx=100, pady=25, bg='white', fg='Blue', bd=7, font='system').grid(row=0,column=1)
+Label(mywin,text="Input the Currency you want to convert:", padx=50, pady=15, fg='blue', bg='white').grid(row=1,column=1)
 input_value=Entry(mywin,width=15)
-input_value.grid(row=1,column=2)
+input_value.grid(row=1,column=2) 
 
 ans=Entry(mywin,width=15)
 
 ans.grid(row=3,column=2)
 
-Label(mywin,text="Required Currency:", padx=50, pady=15, fg='blue', bg='red').grid(row=3,column=1)
+Label(mywin,text="Required Currency:", padx=50, pady=15, fg='blue', bg='white').grid(row=3,column=1)
 Entry(mywin,width=15)
 
 Button(mywin,text="Convert from Rupee to U.S Dollar ",padx=34,pady=10, command=rTOdollar, bg='yellow').grid(row=4,column=1)
